@@ -1,6 +1,6 @@
 {
   "name": "generator-mytime-ng2component",
-  "version": "2.2.0",
+  "version": "2.1.0",
   "description": "An angular 2 component/service generator for all platforms based on new namespace '@angular/core' powered by yeoman. Forked from https://github.com/SteveZheng-BSFT/generator-ng2component",
   "main": "index.js",
   "files": [
