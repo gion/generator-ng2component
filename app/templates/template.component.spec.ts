@@ -4,7 +4,7 @@ import { <%= class_name %> } from './<%=folder_name %>.component'
 describe('<%= class_name %>', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [<%= class_name %>]
+      declarations: [<%= class_name %>],
     })
   })
 
