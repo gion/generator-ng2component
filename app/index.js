@@ -179,7 +179,8 @@ module.exports = generators.Base.extend({
         if (this.generate_opt.indexOf('component') != -1) {
             this.fs.copyTpl(
                 this.templatePath('template.component.html'),
-                this.destinationPath(this.component_location+'/'+ this.component_name + '/'+ this.component_name +'.component.html')
+                this.destinationPath(this.component_location+'/'+ this.component_name + '/'+ this.component_name +'.component.html'),
+                {component_name: this.component_name}
             );
             if (this.use_service) {
                 var service_pos = this.findRelativePath(this.destinationPath(this.component_location+'/'+ this.component_name), this.destinationPath(this.service_location+'/'+ this.service_name));
@@ -200,7 +201,8 @@ module.exports = generators.Base.extend({
             );
             this.fs.copyTpl(
                 this.templatePath('template.component.' + this.component_style),
-                this.destinationPath(this.component_location+'/'+ this.component_name + '/'+ this.component_name +'.component.'+ this.component_style)
+                this.destinationPath(this.component_location+'/'+ this.component_name + '/'+ this.component_name +'.component.'+ this.component_style),
+                {component_name: this.component_name}
             );
             if (!this.omit_index) {
                 this.fs.copyTpl(
