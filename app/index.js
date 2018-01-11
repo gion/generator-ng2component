@@ -72,7 +72,7 @@ module.exports = generators.Base.extend({
         this.service_class = '';
         this.use_service = false;
         this.omit_index = false;
-        this.module_path = 'webpack'
+        this.module_path = '-'
     },
     // this function used to interact with user
     prompting: function () {
@@ -161,8 +161,8 @@ module.exports = generators.Base.extend({
                 this.component_name = answers.component_name;
                 this.component_location = answers.component_location;
                 this.component_class = this.toClassNameHelper(answers.component_name)+'Component';
-                this.component_style = answers.component_style;
-                this.module_path = answers.module_path;
+                // this.component_style = answers.component_style;
+                // this.module_path = answers.module_path;
                 if (answers.module_path === '=') this.module_path = this.component_location;
             }
             if (this.generate_opt.indexOf('service') != -1) {
