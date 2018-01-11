@@ -12,7 +12,7 @@ module.exports = generators.Base.extend({
         generators.Base.apply(this, arguments);
 
         // must pass in an absolute path so use templatePath
-        this.log('Current generator-ng2component VERSION: '+this.fs.readJSON(this.templatePath('../../package.json'), 'no_file_error').version);
+        this.log('Current mytime-generator-ng2component VERSION: '+this.fs.readJSON(this.templatePath('../../package.json'), 'no_file_error').version);
 
         // this helper help to change show-message to ShowMessage
         this.toClassNameHelper = function(input){
@@ -66,7 +66,7 @@ module.exports = generators.Base.extend({
         this.component_name = 'show-message';
         this.component_location = 'src/app';
         this.component_class = 'ShowMessageComponent';
-        this.component_style = 'scss';
+        this.component_style = 'sass';
         this.service_name = 'device';
         this.service_location = 'src/app/shared/services';
         this.service_class = '';
@@ -102,25 +102,25 @@ module.exports = generators.Base.extend({
                 return answers.generate_opt.indexOf('component') != -1;
             }
         }, {
-            type    : 'list',
-            name    : 'component_style',
-            choices : ['scss', 'css', 'less'],
-            message : 'Style sheets?',
-            default : this.component_style,
-            store   : true,
-            when    : function (answers) {
-                return answers.generate_opt.indexOf('component') != -1;
-            }
-        }, {
-            type    : 'input',
-            name    : 'module_path',
-            message : 'Enter the path to the directory where ur module is located:\n[don\'t add a trailing slash; type = use cmp\'s location, type - do not declare]',
-            default : this.module_path,
-            store   : true,
-            when    : function (answers) {
-                return answers.generate_opt.indexOf('component') != -1;
-            }
-        }, {
+        //     type    : 'list',
+        //     name    : 'component_style',
+        //     choices : ['sass', 'css', 'less'],
+        //     message : 'Style sheets?',
+        //     default : this.component_style,
+        //     store   : true,
+        //     when    : function (answers) {
+        //         return answers.generate_opt.indexOf('component') != -1;
+        //     }
+        // }, {
+        //     type    : 'input',
+        //     name    : 'module_path',
+        //     message : 'Enter the path to the directory where ur module is located:\n[don\'t add a trailing slash; type = use cmp\'s location, type - do not declare]',
+        //     default : this.module_path,
+        //     store   : true,
+        //     when    : function (answers) {
+        //         return answers.generate_opt.indexOf('component') != -1;
+        //     }
+        // }, {
             type    : 'input',
             name    : 'service_name',
             message : 'Name for this Service & its Folder?\n[Use kebab-case; Folder & service shares the same name]',
