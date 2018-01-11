@@ -1,20 +1,20 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing'
 import { <%= class_name %> } from './<%=folder_name %>.component'
 
 describe('<%= class_name %>', () => {
-    beforeEach(() => {
-        TestBed.configureTestingModule({
-            declarations: [ <%= class_name %> ]
-        });
-    });
-    
-    describe('method ', () => {
-        it('should ', () => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [ <%= class_name %> ]
+    })
+  })
 
-        });
-    });
-    
-    it('should ', () => {
-        
-    });
-});
+  describe('method ', () => {
+    xit('should ', () => {
+
+    })
+  });
+
+  xit('should ', () => {
+
+  })
+})

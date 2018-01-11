@@ -1,18 +1,17 @@
 {
-  "name": "generator-ng2component",
-  "version": "0.0.9",
-  "description": "An angular 2 component generator for all platforms based on new namespace '@angular/core' powered by yeoman",
+  "name": "mytime-generator-ng2component",
+  "version": "2.0.0",
+  "description": "An angular 2 component/service generator for all platforms based on new namespace '@angular/core' powered by yeoman. Forked from https://github.com/SteveZheng-BSFT/generator-ng2component",
   "main": "index.js",
   "files": [
-    "app",
-    "router"
+    "app"
   ],
   "scripts": {
     "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SteveZheng-BSFT/generator-ng2component.git"
+    "url": "git+https://github.com/gion/generator-ng2component.git"
   },
   "keywords": [
     "angular2",
@@ -23,14 +22,15 @@
     "angular-2",
     "ng",
     "typescript",
-    "yeoman-generator"
+    "yeoman-generator",
+    "mytime"
   ],
   "author": "Steve Zheng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SteveZheng-BSFT/generator-ng2component/issues"
+    "url": "https://github.com/gion/generator-ng2component/issues"
   },
-  "homepage": "https://github.com/SteveZheng-BSFT/generator-ng2component#readme",
+  "homepage": "https://github.com/gion/generator-ng2component#readme",
   "dependencies": {
     "yeoman-generator": "^0.24.1"
   }
