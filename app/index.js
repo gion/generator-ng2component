@@ -64,15 +64,15 @@ module.exports = generators.Base.extend({
         // init some variables
         this.generate_opt = ['component'];
         this.component_name = 'show-message';
-        this.component_location = 'src/app';
+        this.component_location = 'webpack';
         this.component_class = 'ShowMessageComponent';
         this.component_style = 'sass';
         this.service_name = 'device';
-        this.service_location = 'src/app/shared/services';
+        this.service_location = 'webpack/shared/services';
         this.service_class = '';
         this.use_service = false;
         this.omit_index = false;
-        this.module_path = 'src/app'
+        this.module_path = 'webpack'
     },
     // this function used to interact with user
     prompting: function () {

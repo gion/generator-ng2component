@@ -32,31 +32,31 @@ find in npm: https://www.npmjs.com/package/generator-ng2component
             default: show-message  
             [notice: generator will declare this component for u only if u have corresponding .module.ts]
         - **resides position?**  
-            default under: your_project_root/src/app, enter '.' will generate in current folder    
+            default under: your_project_root/webpack, enter '.' will generate in current folder    
         - **style sheet?**  
-            choose from scss, css, less  
+            choose from sass, css, less  
         - **where is your module?**     
-            default: src/app; (type = use component's location, type - do not declare)   
+            default: webpack; (type = use component's location, type - do not declare)   
             [assuming your module's folder name is the same with module's name, above example will find src/**app**/**app**.module.ts, also AVOID TYPING TRAILING SLASH at the end]
         - **service name?**  
             default: device  
         - **service resides position?**  
-            default under: your_project_root/src/app/shared/services/    
+            default under: your_project_root/webpack/shared/services/    
         - **import service into new component?**  
             default: no
         - **omit index.ts?**  
             default: false. it will generate index.ts for each of your cmp/service
 
-    > normally, it will generate following (example) structure under your project/src/app:
+    > normally, it will generate following (example) structure under your project/webpack:
 
     ```
     project-root/
-    ├── src/
+    ├── webpack/
     │   └── some-module-name/
     │       ├── show-message/
     │       │    ├── show-message.component.ts
     │       │    ├── show-message.component.spec.ts
-    │       │    ├── show-message.component.scss[less][css]
+    │       │    ├── show-message.component.sass[less][css]
     │       │    ├── show-message.component.html
     │       │    └── index.ts
     │       ├── some-module-name.module.ts (auto declare)
